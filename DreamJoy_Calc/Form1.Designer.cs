@@ -208,7 +208,7 @@ namespace DreamJoy_Calc
             this.Controls.Add(this.buttonRekPlus);
             this.Controls.Add(this.TitleRek);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Rekening manager";
             ((System.ComponentModel.ISupportInitialize)(this.numRek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpaar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numZicht)).EndInit();
