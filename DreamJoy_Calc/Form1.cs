@@ -66,5 +66,12 @@ namespace DreamJoy_Calc
             zichtRekening.Afhalen(Convert.ToDouble(numZicht.Value));
             labelZichtToString.Text = zichtRekening.ToString();
         }
+
+        private void buttonRente_Click(object sender, EventArgs e)
+        {   
+            double rente = ((spaarRekening.Saldo * 5) / 100);
+            spaarRekening.Saldo += rente ;
+            labelSpaarToString.Text = spaarRekening.ToString();
+        }
     }
 }
