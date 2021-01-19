@@ -44,6 +44,7 @@ namespace DreamJoy_Calc
             this.buttonZichtMin = new System.Windows.Forms.Button();
             this.buttonZichtPlus = new System.Windows.Forms.Button();
             this.TitelZicht = new System.Windows.Forms.Label();
+            this.buttonRente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numRek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpaar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numZicht)).BeginInit();
@@ -53,17 +54,19 @@ namespace DreamJoy_Calc
             // 
             this.TitleRek.AutoSize = true;
             this.TitleRek.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TitleRek.Location = new System.Drawing.Point(78, 52);
+            this.TitleRek.Location = new System.Drawing.Point(62, 42);
+            this.TitleRek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TitleRek.Name = "TitleRek";
-            this.TitleRek.Size = new System.Drawing.Size(92, 25);
+            this.TitleRek.Size = new System.Drawing.Size(74, 20);
             this.TitleRek.TabIndex = 0;
             this.TitleRek.Text = "Rekening";
             // 
             // buttonRekPlus
             // 
-            this.buttonRekPlus.Location = new System.Drawing.Point(334, 79);
+            this.buttonRekPlus.Location = new System.Drawing.Point(267, 63);
+            this.buttonRekPlus.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRekPlus.Name = "buttonRekPlus";
-            this.buttonRekPlus.Size = new System.Drawing.Size(112, 34);
+            this.buttonRekPlus.Size = new System.Drawing.Size(90, 27);
             this.buttonRekPlus.TabIndex = 1;
             this.buttonRekPlus.Text = "+";
             this.buttonRekPlus.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@ namespace DreamJoy_Calc
             // 
             // buttonRekMin
             // 
-            this.buttonRekMin.Location = new System.Drawing.Point(452, 79);
+            this.buttonRekMin.Location = new System.Drawing.Point(362, 63);
+            this.buttonRekMin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRekMin.Name = "buttonRekMin";
-            this.buttonRekMin.Size = new System.Drawing.Size(112, 34);
+            this.buttonRekMin.Size = new System.Drawing.Size(90, 27);
             this.buttonRekMin.TabIndex = 3;
             this.buttonRekMin.Text = "-";
             this.buttonRekMin.UseVisualStyleBackColor = true;
@@ -82,40 +86,45 @@ namespace DreamJoy_Calc
             // labelRekToString
             // 
             this.labelRekToString.AutoSize = true;
-            this.labelRekToString.Location = new System.Drawing.Point(78, 115);
+            this.labelRekToString.Location = new System.Drawing.Point(62, 92);
+            this.labelRekToString.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRekToString.Name = "labelRekToString";
-            this.labelRekToString.Size = new System.Drawing.Size(59, 25);
+            this.labelRekToString.Size = new System.Drawing.Size(50, 20);
             this.labelRekToString.TabIndex = 4;
             this.labelRekToString.Text = "label2";
             // 
             // numRek
             // 
-            this.numRek.Location = new System.Drawing.Point(78, 81);
+            this.numRek.Location = new System.Drawing.Point(62, 65);
+            this.numRek.Margin = new System.Windows.Forms.Padding(2);
             this.numRek.Name = "numRek";
-            this.numRek.Size = new System.Drawing.Size(180, 31);
+            this.numRek.Size = new System.Drawing.Size(144, 27);
             this.numRek.TabIndex = 5;
             // 
             // numSpaar
             // 
-            this.numSpaar.Location = new System.Drawing.Point(78, 208);
+            this.numSpaar.Location = new System.Drawing.Point(62, 166);
+            this.numSpaar.Margin = new System.Windows.Forms.Padding(2);
             this.numSpaar.Name = "numSpaar";
-            this.numSpaar.Size = new System.Drawing.Size(180, 31);
+            this.numSpaar.Size = new System.Drawing.Size(144, 27);
             this.numSpaar.TabIndex = 10;
             // 
             // labelSpaarToString
             // 
             this.labelSpaarToString.AutoSize = true;
-            this.labelSpaarToString.Location = new System.Drawing.Point(78, 242);
+            this.labelSpaarToString.Location = new System.Drawing.Point(62, 194);
+            this.labelSpaarToString.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSpaarToString.Name = "labelSpaarToString";
-            this.labelSpaarToString.Size = new System.Drawing.Size(59, 25);
+            this.labelSpaarToString.Size = new System.Drawing.Size(50, 20);
             this.labelSpaarToString.TabIndex = 9;
             this.labelSpaarToString.Text = "label2";
             // 
             // buttonSpaarMin
             // 
-            this.buttonSpaarMin.Location = new System.Drawing.Point(452, 206);
+            this.buttonSpaarMin.Location = new System.Drawing.Point(362, 165);
+            this.buttonSpaarMin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpaarMin.Name = "buttonSpaarMin";
-            this.buttonSpaarMin.Size = new System.Drawing.Size(112, 34);
+            this.buttonSpaarMin.Size = new System.Drawing.Size(90, 27);
             this.buttonSpaarMin.TabIndex = 8;
             this.buttonSpaarMin.Text = "-";
             this.buttonSpaarMin.UseVisualStyleBackColor = true;
@@ -123,9 +132,10 @@ namespace DreamJoy_Calc
             // 
             // buttonSpaarPlus
             // 
-            this.buttonSpaarPlus.Location = new System.Drawing.Point(334, 206);
+            this.buttonSpaarPlus.Location = new System.Drawing.Point(267, 165);
+            this.buttonSpaarPlus.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpaarPlus.Name = "buttonSpaarPlus";
-            this.buttonSpaarPlus.Size = new System.Drawing.Size(112, 34);
+            this.buttonSpaarPlus.Size = new System.Drawing.Size(90, 27);
             this.buttonSpaarPlus.TabIndex = 7;
             this.buttonSpaarPlus.Text = "+";
             this.buttonSpaarPlus.UseVisualStyleBackColor = true;
@@ -135,33 +145,37 @@ namespace DreamJoy_Calc
             // 
             this.TitelSpaar.AutoSize = true;
             this.TitelSpaar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TitelSpaar.Location = new System.Drawing.Point(78, 179);
+            this.TitelSpaar.Location = new System.Drawing.Point(62, 143);
+            this.TitelSpaar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TitelSpaar.Name = "TitelSpaar";
-            this.TitelSpaar.Size = new System.Drawing.Size(135, 25);
+            this.TitelSpaar.Size = new System.Drawing.Size(109, 20);
             this.TitelSpaar.TabIndex = 6;
             this.TitelSpaar.Text = "Spaarrekening";
             // 
             // numZicht
             // 
-            this.numZicht.Location = new System.Drawing.Point(78, 320);
+            this.numZicht.Location = new System.Drawing.Point(62, 256);
+            this.numZicht.Margin = new System.Windows.Forms.Padding(2);
             this.numZicht.Name = "numZicht";
-            this.numZicht.Size = new System.Drawing.Size(180, 31);
+            this.numZicht.Size = new System.Drawing.Size(144, 27);
             this.numZicht.TabIndex = 15;
             // 
             // labelZichtToString
             // 
             this.labelZichtToString.AutoSize = true;
-            this.labelZichtToString.Location = new System.Drawing.Point(78, 354);
+            this.labelZichtToString.Location = new System.Drawing.Point(62, 283);
+            this.labelZichtToString.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelZichtToString.Name = "labelZichtToString";
-            this.labelZichtToString.Size = new System.Drawing.Size(59, 25);
+            this.labelZichtToString.Size = new System.Drawing.Size(50, 20);
             this.labelZichtToString.TabIndex = 14;
             this.labelZichtToString.Text = "label2";
             // 
             // buttonZichtMin
             // 
-            this.buttonZichtMin.Location = new System.Drawing.Point(452, 318);
+            this.buttonZichtMin.Location = new System.Drawing.Point(362, 254);
+            this.buttonZichtMin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZichtMin.Name = "buttonZichtMin";
-            this.buttonZichtMin.Size = new System.Drawing.Size(112, 34);
+            this.buttonZichtMin.Size = new System.Drawing.Size(90, 27);
             this.buttonZichtMin.TabIndex = 13;
             this.buttonZichtMin.Text = "-";
             this.buttonZichtMin.UseVisualStyleBackColor = true;
@@ -169,9 +183,10 @@ namespace DreamJoy_Calc
             // 
             // buttonZichtPlus
             // 
-            this.buttonZichtPlus.Location = new System.Drawing.Point(334, 318);
+            this.buttonZichtPlus.Location = new System.Drawing.Point(267, 254);
+            this.buttonZichtPlus.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZichtPlus.Name = "buttonZichtPlus";
-            this.buttonZichtPlus.Size = new System.Drawing.Size(112, 34);
+            this.buttonZichtPlus.Size = new System.Drawing.Size(90, 27);
             this.buttonZichtPlus.TabIndex = 12;
             this.buttonZichtPlus.Text = "+";
             this.buttonZichtPlus.UseVisualStyleBackColor = true;
@@ -181,17 +196,30 @@ namespace DreamJoy_Calc
             // 
             this.TitelZicht.AutoSize = true;
             this.TitelZicht.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TitelZicht.Location = new System.Drawing.Point(78, 291);
+            this.TitelZicht.Location = new System.Drawing.Point(62, 233);
+            this.TitelZicht.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TitelZicht.Name = "TitelZicht";
-            this.TitelZicht.Size = new System.Drawing.Size(130, 25);
+            this.TitelZicht.Size = new System.Drawing.Size(105, 20);
             this.TitelZicht.TabIndex = 11;
             this.TitelZicht.Text = "Zichtrekening";
             // 
+            // buttonRente
+            // 
+            this.buttonRente.Location = new System.Drawing.Point(456, 165);
+            this.buttonRente.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonRente.Name = "buttonRente";
+            this.buttonRente.Size = new System.Drawing.Size(90, 28);
+            this.buttonRente.TabIndex = 16;
+            this.buttonRente.Text = "Rente";
+            this.buttonRente.UseVisualStyleBackColor = true;
+            this.buttonRente.Click += new System.EventHandler(this.buttonRente_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.Controls.Add(this.buttonRente);
             this.Controls.Add(this.numZicht);
             this.Controls.Add(this.labelZichtToString);
             this.Controls.Add(this.buttonZichtMin);
@@ -207,6 +235,7 @@ namespace DreamJoy_Calc
             this.Controls.Add(this.buttonRekMin);
             this.Controls.Add(this.buttonRekPlus);
             this.Controls.Add(this.TitleRek);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Acount Manager";
             ((System.ComponentModel.ISupportInitialize)(this.numRek)).EndInit();
@@ -234,6 +263,7 @@ namespace DreamJoy_Calc
         private System.Windows.Forms.Button buttonZichtMin;
         private System.Windows.Forms.Button buttonZichtPlus;
         private System.Windows.Forms.Label TitelZicht;
+        private System.Windows.Forms.Button buttonRente;
     }
 }
 
