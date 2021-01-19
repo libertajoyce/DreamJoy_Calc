@@ -237,7 +237,7 @@ namespace DreamJoy_Calc
             this.Controls.Add(this.TitleRek);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Acount Manager";
             ((System.ComponentModel.ISupportInitialize)(this.numRek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpaar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numZicht)).EndInit();
