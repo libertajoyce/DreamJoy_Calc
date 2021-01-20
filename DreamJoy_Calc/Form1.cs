@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DreamJoy_Calc
@@ -13,17 +6,16 @@ namespace DreamJoy_Calc
     public partial class Form1 : Form
     {
         public Rekening rekening;
-        Spaarrekening spaarRekening;
-        Zichtrekening zichtRekening;
+        private Spaarrekening spaarRekening;
+        private Zichtrekening zichtRekening;
+
         public Form1()
         {
             rekening = new Rekening("BE651435846REK", 0);
-            
-            
+
             spaarRekening = new Spaarrekening("BE6514358468SP", 0, 5);
-            
+
             zichtRekening = new Zichtrekening("BE6514358468ZI", 0);
-            
 
             InitializeComponent();
             labelRekToString.Text = rekening.ToString();
@@ -68,9 +60,9 @@ namespace DreamJoy_Calc
         }
 
         private void buttonRente_Click(object sender, EventArgs e)
-        {   
+        {
             double rente = ((spaarRekening.Saldo * 5) / 100);
-            spaarRekening.Saldo += rente ;
+            spaarRekening.Saldo += rente;
             labelSpaarToString.Text = spaarRekening.ToString();
         }
     }

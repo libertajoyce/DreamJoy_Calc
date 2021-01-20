@@ -1,40 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DreamJoy_Calc
 {
-    abstract class Dier
+    internal abstract class Dier
     {
         private string _naam;
 
-        public  string Naam
+        public string Naam
         {
             get { return _naam; }
-           
-           
+            set { _naam = value; }
         }
 
-        public Dier(string naam)
+        protected Dier(string naam)
         {
-            _naam = naam;
+            Naam = naam;
         }
 
         public virtual string Eten()
         {
-            return "Lekker";
+            return "";
         }
 
         public virtual string Praten(string input)
         {
+            return "";
+        }
+
+        public virtual string Strelen()
+        {
+            return "";
+        }
+    }
+
+    internal class Mens : Dier
+    {
+        public Mens(string naam) //constructor
+            : base(naam)   //wordt enkel aangeroepen in de base constructor Dier
+        {
+        }
+
+        public override string Eten()
+        {
+            return "Lekker!";
+        }
+
+        public override string Praten(string input)
+        {
             string output = "";
             switch (input)
-            {   case "Goedemorgen":
-                    output = "Ook een goedemorgen"; 
-                break;
+            {
+                case "Goedemorgen":
+                    output = "Ook een goedemorgen";
+                    break;
 
-                case "F off":
-                    output = "Jij ook";
+                case "Hallo":
+                    output = $"Hallo, ik ben {Naam}.";
                     break;
 
                 case "How are you?":
@@ -57,7 +78,7 @@ namespace DreamJoy_Calc
                     output = "that they're all gonna .. ";
                     break;
 
-                case "ik wil naar huis":
+                case "Ik wil naar huis":
                     output = "Vertrek dan";
                     break;
 
@@ -69,87 +90,58 @@ namespace DreamJoy_Calc
                     output = "Hey Panam";
                     break;
 
-
-                default:  output = "Wrong Input";
+                default:
+                    output = "Wrong Input";
                     break;
             }
-            return "";
-            
-        }
-        
-        public virtual string Strelen()
-        {
-            return "jaja";
-        }
-
-
-
-    }
-
-    class Mens : Dier
-    {
-        public Mens(string naam) //constructor
-            :base(naam)   //wordt enkel aangeroepen in de base constructor Dier
-        {
-          
-        }
-        public override string Eten()
-        {
-            return "haha";
-        }
-
-        public override string Praten()
-        {
-
-            return "lol";
+            return output;
         }
 
         public override string Strelen()
         {
-            return "jaja";
+            return "Blijf van mijn lijf. Arrh.";
         }
     }
 
-    class Papegaai : Dier
+    internal class Papegaai : Dier
     {
         public Papegaai(string naam)
-         : base(naam)   
+         : base(naam)
         {
-
         }
-        public override string Praten()
+
+        public override string Praten(string input)
         {
+            Random rand = new Random();
+            int rnd = rand.Next(1, 5);
 
-            return "lol";
+            return (rnd == 1) ? "Koko kopke krabben" : input; //If random number is 1 return koko otherwise return input
         }
+
         public override string Strelen()
         {
-            return "jaja";
+            return "Koko";
         }
     }
 
-    class Kat : Dier
+    internal class Kat : Dier
     {
-        private int _teller;
-
         public Kat(string naam)
          : base(naam)
         {
-
         }
-        public override string Praten()
-        {
 
-            return "lol";
+        public override string Praten(string input)
+        {
+            Random rand = new Random();
+            int rnd = rand.Next(1, 3);
+
+            return (rnd == 1) ? "MiauwMiauw" : "...";
         }
 
         public override string Strelen()
         {
-            return "jaja";
+            return "RrRrRrR";
         }
-
-
-
     }
 }
-
