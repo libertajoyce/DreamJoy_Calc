@@ -17,9 +17,8 @@ namespace DreamJoy_Calc
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run((Form)new Form1());
-            Application.Run((Form)new Form2());
-            Application.Run((Form)new Form3());
+            Application.Run((Form)new MainForm());
+          
         }
     }
 }
